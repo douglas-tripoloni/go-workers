@@ -23,6 +23,7 @@ func main() {
 	for x:= 0; x < concurrency; x++ {
 		go ProccessWorker(in, x)
 	}
+	
 	<-done
 }
 
